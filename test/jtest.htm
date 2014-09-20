@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Field Calculator for Off-Axis Fields Due to a Current Loop</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<!--#geoguide-->
+<p><script language="JavaScript"><!--
+//var bcreated=false
+//var index=0
+//var msgWindow
+var outstr=""
+
+
+function Zing()
+{
+	with (document.theform)
+	{
+		outstr = "Look at this:\r\n"
+		outstr += "<p><applet code='plotter.class' align='baseline' width='320' height='240' name='plotter'>\r\n"
+		outstr += "	<param name='width' value='320'>\r\n"
+		outstr += "	<param name='height' value='240'>\r\n"
+		outstr += "	<param name='p0' value='l3,"+X1.value+","+Y1.value+","+X2.value+","+Y2.value+","+X3.value+","+Y3.value+"'>\r\n"
+		outstr += "	<param name='p1' value='c"+X1.value+","+Y1.value+","+R.value+"'>\r\n"
+		outstr += "	<param name='p2' value='t"+(5+parseInt(X3.value))+","+(5+parseInt(Y3.value))+","+Text.value+"'>\r\n"
+		outstr += "</applet></p>\r\n"
+	}
+	window.open("results.htm","","menubar,width=600,height=400,scrollbars,resizable")
+}
+
+
+// --></script></p>
+
+<table border="0" width="575">
+    <tr>
+        <td><font size="6" face="Arial">Magic Magnetic Java and
+        JavaScript Test Page</font></td>
+    </tr>
+</table>
+
+<hr align="left" noshade width="575" color="#FF0000">
+
+<form name="theform">
+    <table border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+            <td colspan="6"><font face="Arial">Enter x and y
+            coordinates for three points using values between 1
+            and 250, the radius (r) of a circle to be centered on
+            x1,y1 and text (text) to be displayed following
+            x3,y3. Then press &quot;Display&quot; to connect the
+            dots and display the circle and text (big deal!).</font></td>
+        </tr>
+        <tr>
+            <td align="right" width="10%">X1</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%"><p align="left"><input type="text"
+            size="20" name="X1"></p>
+            </td>
+            <td align="right" width="10%"><p align="right">Y1</p>
+            </td>
+            <td width="5%">&nbsp; </td>
+            <td width="30%"><input type="text" size="20"
+            name="Y1"></td>
+        </tr>
+        <tr>
+            <td align="right" width="10%">X2</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%"><input type="text" size="20"
+            name="X2"></td>
+            <td align="right" width="10%">Y2</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%"><input type="text" size="20"
+            name="Y2"></td>
+        </tr>
+        <tr>
+            <td align="right" width="10%">X3</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%"><input type="text" size="20"
+            name="X3"></td>
+            <td align="right" width="10%">Y3</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%"><input type="text" size="20"
+            name="Y3"></td>
+        </tr>
+        <tr>
+            <td align="right" width="10%">R</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%"><input type="text" size="20" name="R"></td>
+            <td align="right" width="10%">&nbsp;</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" width="10%">TEXT</td>
+            <td width="5%">&nbsp;</td>
+            <td colspan="4" width="75%"><input type="text"
+            size="53" name="Text"></td>
+        </tr>
+        <tr>
+            <td align="right" width="10%">&nbsp;</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+            <td align="right" width="10%">&nbsp;</td>
+            <td width="5%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+        </tr>
+    </table>
+    <table border="0" width="600">
+        <tr>
+            <td><p align="center"><input type="button" name="B2"
+            value="Display" onclick="Zing()"></p>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

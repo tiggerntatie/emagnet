@@ -1,0 +1,4 @@
+sitename emagnet
+siteurl www.netdenizen.com/emagnet
+sitedescr A small web site devoted to the vanishing art of practical magnet design without FEA (Finite Element Analysis).
+siteicon www.netdenizen.com/magnet.gif
